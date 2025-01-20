@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li, a, button {
+    text-decoration: none;
+}
+
+a button {
+    cursor: pointer;
+}
+
+.top_sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 160px;
+}
+
+.top_left {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.top_left h2, img {
+    cursor: pointer;
+}
+
+.nav_link {
+    list-style: none;
+}
+
+.nav_link li {
+    display: inline-block;
+    padding: 0px 32px;
+}
+
+.hbtn {
+    color: rgba(254, 163, 1, 1);
+}
+
+.abtn {
+    color: rgba(1, 172, 253, 1);
+}
+
+.fbtn {
+    color: #05D4DF;
+}
+
+.admibtn {
+    color: #5D58EF;
+}
+
+.cta button {
+    background-color: rgba(254, 163, 1, 1);
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 10px 60.5px;
+    border: 1px solid rgba(254, 163, 1, 1);
+}
+
+.cta button {
+    transition: all 1.6s ease 0s;
+}
+.cta button:hover {
+    box-shadow: rgba(254, 163, 1, 1) 0px 5px 15px;
+}
+
