@@ -319,7 +319,7 @@ button {
     background-color: transparent;
     color: rgba(135, 0, 255, 1);
     border: 0px solid rgba(135, 0, 255, 1);
-    margin-bottom: 1px;
+    margin-bottom: 3px;
 }
 
 .read_more_btn_3:hover {
@@ -711,8 +711,13 @@ button {
         margin: 20px 0px;
     }
 
+    .read_more_btn_2 {
+        margin-bottom: 16px;
+    }
+
     .read_more_btn_1 {
         margin-top: 0px;
+        margin-bottom: 10px;
     }
 
 }
