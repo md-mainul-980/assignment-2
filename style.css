@@ -222,34 +222,65 @@ button {
     font-weight: bold;
 }
 
-.cards {
+.cards_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 80px auto;
+}
+
+.card {
+    background-color: white;
     height: 477px;
     width: 367.8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 18.86px;
-    border: 1px solid black;
-    
-}
-
-.cards p {
-    font-size: 1rem;
-    padding: 34px 39px 34px 40px;
+    border-radius: 19px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    line-height: 1.4;
-    justify-content: center;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.cards h3 {
-    font-size: 1.533rem;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 130px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    font-size: 1.3rem;
     font-weight: bold;
-    padding: 32px 0 0;
+    margin-bottom: 30px;
 }
 
-.cards img {
-    padding: 50px 115.5px 0;
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+
+/* Background colors for cards */
+.card:nth-child(1) {
+    border: 0.1px solid rgba(222, 245, 255, 1);
+    box-shadow: rgba(222, 245, 255, 1) 0px 120px 30px -12px inset, rgba(222, 245, 255, 1) 0px 18px 24px -18px inset;
+}
+
+.card:nth-child(2) {
+    border: 0.1px solid rgba(255, 244, 220, 1);
+    box-shadow: rgba(255, 244, 220, 1) 0px 120px 30px -12px inset, rgba(255, 244, 220, 1) 0px 18px 24px -18px inset;
+}
+
+.card:nth-child(3) {
+    border: 0.1px solid rgba(242, 232, 255, 1);
+    box-shadow: rgba(242, 232, 255, 1) 0px 120px 30px -12px inset, rgba(242, 232, 255, 1) 0px 18px 24px -18px inset;
 }
 
 .btn {
@@ -298,6 +329,49 @@ button {
     box-shadow: rgba( 0, 0, 0, 0.25) 0 5px 15px;
 }
 
+.arrow_button {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow_btn_1 {
+    rotate: 180deg;
+}
+
+.circle-button {
+    width: 50px;
+    height: 50px;
+    background-color: #FFA500; 
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.circle-button:hover {
+    transform: scale(1.1);
+}
+
+.circle-button:active {
+    transform: scale(0.95);
+}
+
+.circle-button .arrow {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.arrow_button button {
+    background-color: rgba(254, 163, 1, 1);
+    border-radius: 30px;
+    padding: 5px 5px;
+}
 
 /* making the header part responsive for mobile */
 
@@ -413,6 +487,10 @@ button {
         font-size: 1.1rem;
         padding: 14px 40px;
         border: 1px solid rgba(17, 17, 17, 1);
+    }
+
+    .arrow_button {
+        display: none;
     }
 
 }
