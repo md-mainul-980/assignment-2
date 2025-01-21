@@ -197,7 +197,8 @@ button {
 .section_1 {
     background-image: url("assets/bg.png");
     background-repeat: no-repeat;
-    
+    background-size: auto 100%;
+    background-position: 30% 0%;
 }
 
 .section_1 > div {
@@ -530,6 +531,8 @@ footer {
 
     .section_1 {
         margin: 220px auto;
+        background-size: auto auto;
+        background-position: 25% 0%;
     }
 
     .section_1 > div {
@@ -687,6 +690,8 @@ footer {
 
     .section_1 {
         margin: 140px auto;
+        background-size: auto auto;
+        background-position: 25% 0%;
     }
 
     .section_1 > div {
