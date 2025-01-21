@@ -225,7 +225,7 @@ button {
 
 .card {
     background-color: white;
-    height: 467px;
+    height: 500px;
     width: 367.8px;
     display: flex;
     flex-direction: column;
@@ -244,20 +244,20 @@ button {
 }
 
 .card img {
-    width: 130px;
-    height: auto;
+    width: 125px;
+    height: 126px;
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
 .card h3 {
-    font-size: 1.3rem;
+    font-size: 1.82rem;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
 .card p {
-    font-size: 0.8rem;
+    font-size: 0.98rem;
     font-weight: 500;
     padding: 0 40px;
 }
@@ -280,18 +280,17 @@ button {
 }
 
 .btn {
-    font-size: 0.943rem;
+    font-size: 1rem;
     font-weight: bold;
     padding: 12px 60px;
     border-radius: 8px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .read_more_btn_1  {
     background-color: transparent;
     color: rgba(100, 200, 255, 1);
-    border: 0px solid rgba(100, 200, 255, 1);
-    margin-bottom: 12px;
+    border: 0px solid rgba(100, 200, 255, 1); 
 }
 
 .read_more_btn_1:hover {
@@ -315,11 +314,11 @@ button {
 }
 
 .read_more_btn_3  {
-    margin-top: 19px;
+
     background-color: transparent;
     color: rgba(135, 0, 255, 1);
     border: 0px solid rgba(135, 0, 255, 1);
-    margin-bottom: 3px;
+
 }
 
 .read_more_btn_3:hover {
@@ -375,6 +374,38 @@ button {
 .section_2 {
     display: grid;
     
+}
+
+
+
+footer {
+    background-color: rgba(1, 172, 253, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    padding: 123px 172px 179px 140px;
+}
+
+.left .left_title {
+    display: flex;
+    align-items: center;
+}
+
+.left p {
+    font-size: 0.9rem;
+    text-align: start;
+}
+
+.mid {
+
+}
+
+.right {
+
 }
 
 /* making the header part responsive for mobile */
@@ -683,20 +714,24 @@ button {
     }
 
     .card img {
-        width: auto;
-        height: auto;
         margin: 50px auto 30px;
     }
    
     .card h3 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: bold;
         margin-bottom: 20px;
     }
 
     .card p {
         font-size: 0.83rem;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
+        line-height: 1.2;
+
+    }
+
+    .card:nth-child(2) img {
+        margin-top: 60px;
     }
 
     .btn {
@@ -706,18 +741,4 @@ button {
         padding: 12px 30px;
         border-radius: 8px;
     }
-    
-    .read_more_btn_1, .read_more_btn_2, .read_more_btn_3 {
-        margin: 20px 0px;
-    }
-
-    .read_more_btn_2 {
-        margin-bottom: 16px;
-    }
-
-    .read_more_btn_1 {
-        margin-top: 0px;
-        margin-bottom: 10px;
-    }
-
 }
