@@ -131,10 +131,12 @@ nav a {
     border: 1px solid rgba(254, 163, 1, 1);
 }
 
-.cta button {
+button {
     transition: all 0.75s ease 0s;
 }
 .cta button:hover {
+    background-color: white;
+    color: rgba(254, 163, 1, 1);
     box-shadow: rgba(254, 163, 1, 1) 0px 5px 15px;
 }
 
@@ -175,6 +177,14 @@ nav a {
     font-size: 1.25rem;
     padding: 0.625em 3em;
     border: 1px solid rgba(17, 17, 17, 1);
+
+}
+
+.banner button:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    box-shadow: rgba( 0, 0, 0, 0.25) 0px 5px 15px;
 }
 
 /* banner image */
@@ -259,18 +269,21 @@ nav a {
 .read_more_btn_1:hover {
     background-color: rgba(100, 200, 255, 1);
     color: white;
+    box-shadow: rgba( 0, 0, 0, 0.25) 0 5px 15px;
 }
 
 .read_more_btn_2 {
     background-color: transparent;
     color: rgba(240, 170, 0, 1);
     border: 0px solid rgba(240, 170, 0, 1);
+    
 }
 
 
 .read_more_btn_2:hover {
     background-color: rgba(240, 170, 0, 1);
     color: white;
+    box-shadow: rgba( 0, 0, 0, 0.25) 0 5px 15px;
 }
 
 .read_more_btn_3  {
@@ -282,6 +295,7 @@ nav a {
 .read_more_btn_3:hover {
     background-color: rgba(135, 0, 255, 1);
     color: white;
+    box-shadow: rgba( 0, 0, 0, 0.25) 0 5px 15px;
 }
 
 
