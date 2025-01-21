@@ -169,7 +169,7 @@ button {
     padding-bottom: 1.5rem;
 }
 
-.banner_text button {
+.banner_text button, .btn_style {
     background-color: rgba(17, 17, 17, 1);
     border-radius: 12px;
     color: white;
@@ -180,7 +180,7 @@ button {
 
 }
 
-.banner button:hover {
+.banner button:hover, .btn_style:hover {
     background-color: white;
     border: 1px solid white;
     color: black;
@@ -197,7 +197,7 @@ button {
 .section_1 {
     background-image: url("assets/bg.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    
 }
 
 .section_1 > div {
@@ -206,14 +206,8 @@ button {
     margin: 60px 140px;
 }
 
-.card_1_container {
-    display: flex;
-    padding: 80px 0;
-    justify-content: space-between;
-}
-
 .sec_1_title {
-    margin: 60px 390px 0 390px;
+    margin: 60px 390px 30px 390px;
 }
 
 .sec_1_title h1 {
@@ -226,12 +220,12 @@ button {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 80px auto;
+    margin: 30px auto;
 }
 
 .card {
     background-color: white;
-    height: 477px;
+    height: 467px;
     width: 367.8px;
     display: flex;
     flex-direction: column;
@@ -252,6 +246,7 @@ button {
 .card img {
     width: 130px;
     height: auto;
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -262,8 +257,9 @@ button {
 }
 
 .card p {
-    font-size: 0.95rem;
-    margin-bottom: 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0 40px;
 }
 
 
@@ -286,15 +282,16 @@ button {
 .btn {
     font-size: 0.943rem;
     font-weight: bold;
-    margin-bottom: 50px;
     padding: 12px 60px;
     border-radius: 8px;
+    margin-top: 30px;
 }
 
 .read_more_btn_1  {
     background-color: transparent;
     color: rgba(100, 200, 255, 1);
     border: 0px solid rgba(100, 200, 255, 1);
+    margin-bottom: 12px;
 }
 
 .read_more_btn_1:hover {
@@ -318,9 +315,11 @@ button {
 }
 
 .read_more_btn_3  {
+    margin-top: 19px;
     background-color: transparent;
     color: rgba(135, 0, 255, 1);
     border: 0px solid rgba(135, 0, 255, 1);
+    margin-bottom: 1px;
 }
 
 .read_more_btn_3:hover {
@@ -371,6 +370,11 @@ button {
     background-color: rgba(254, 163, 1, 1);
     border-radius: 30px;
     padding: 5px 5px;
+}
+
+.section_2 {
+    display: grid;
+    
 }
 
 /* making the header part responsive for mobile */
@@ -493,6 +497,50 @@ button {
         display: none;
     }
 
+    .section_1 {
+        margin: 220px auto;
+    }
+
+    .section_1 > div {
+        margin: 0;
+    }
+
+    .sec_1_title {
+
+        margin: 60px auto 30px;
+    }
+
+    .sec_1_title h1 {
+        font-size: 2rem;
+    }
+
+    .cards_container {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 10px;
+        max-width: 576px;
+    }
+
+    .card {
+        width: 357px;
+        height: auto;
+        padding: 36px 28px;
+    }
+
+    .card img {
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        margin-bottom: 0px;
+    }
+
 }
 
 /* responsive layout landscape and tablets */
@@ -603,6 +651,68 @@ button {
         font-size: 1.5rem;
         padding: 24px 32px;
         border: 1px solid rgba(17, 17, 17, 1);
+    }
+
+
+    .section_1 {
+        margin: 140px auto;
+    }
+
+    .section_1 > div {
+        margin: 0;
+    }
+
+    .sec_1_title {
+        margin: 60px auto 50px;
+    }
+
+    .sec_1_title h1 {
+        font-size: 2.5rem;
+    }
+
+    .cards_container {
+        gap: 30px;
+        margin-top: 10px;
+        max-width: 900px;
+    }
+
+    .card {
+        width: 800px;
+        height: 477px;
+        padding: 36px 28px;
+    }
+
+    .card img {
+        width: auto;
+        height: auto;
+        margin: 50px auto 30px;
+    }
+   
+    .card h3 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .card p {
+        font-size: 0.83rem;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        font-size: 0.943rem;
+        font-weight: bold;
+        margin-bottom: 50px;
+        padding: 12px 30px;
+        border-radius: 8px;
+    }
+    
+    .read_more_btn_1, .read_more_btn_2, .read_more_btn_3 {
+        margin: 20px 0px;
+    }
+
+    .read_more_btn_1 {
+        margin-top: 0px;
     }
 
 }
