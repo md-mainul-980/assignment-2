@@ -14,17 +14,27 @@
                 <img src="assets/logo.png" alt="photo of a bagpack">
                 <h2>SCHOOL</h2>
             </div>
-            <div class="nav_sec">
+            <div class="menu">
                 <nav>
-                    <ul class="nav_link">
-                        <li><a class="hbtn" href="#">Home</a></li>
-                        <li><a class="abtn" href="#">About</a></li>
-                        <li><a class="fbtn" href="#">Facilities</a></li>
-                        <li><a class="admibtn" href="#">Admission</a></li>
-                    </ul>
+                    <input type="checkbox" id="side_bar" class="sidebar_menu">
+                    <label for="side_bar" class="open_side_bar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                    </label>
+                    <div class="link_container">
+                        <label for="side_bar" class="close_side_bar">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                        </label>
+                        <a class="hbtn" href="#">Home</a>
+                        <a class="abtn" href="#">About</a>
+                        <a class="fbtn" href="#">Facilities</a>
+                        <a class="admibtn" href="#">Admission</a>
+                        <a class="ctabtn" href="#">Contact</a> 
+                    </div>
+                    
                 </nav>
             </div>
-            <div>
+
+            <div class="cta_btn">
                 <a class="cta" href="#">
                     <button>
                         Contact
@@ -35,8 +45,9 @@
 
         <div class="banner">
             <div class="banner_text">
-                <h1>Empowering
-                    students from small age towards vision
+                <h1><span class="color_orange">Empowering</span>
+                    students from small age 
+                    <span class="color_lightblue">towards vision</span>
                 </h1>
                 <p>
                     With the courage, Confidence, Creativity and 
