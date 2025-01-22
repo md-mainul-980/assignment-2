@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-    <title>Kids Education</title>
+    <title>Kids School</title>
 </head>
 <body class="quicksand-font">
     <header>
@@ -24,11 +24,11 @@
                         <label for="side_bar" class="close_side_bar">
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                         </label>
-                        <a class="hbtn" href="#">Home</a>
-                        <a class="abtn" href="#">About</a>
-                        <a class="fbtn" href="#">Facilities</a>
-                        <a class="admibtn" href="#">Admission</a>
-                        <a class="ctabtn" href="#">Contact</a> 
+                        <a class="hbtn hover" href="#">Home</a>
+                        <a class="abtn hover" href="#">About</a>
+                        <a class="fbtn hover" href="#">Facilities</a>
+                        <a class="admibtn hover" href="#">Admission</a>
+                        <a class="ctabtn"><button>Contact</button></a> 
                     </div>
                     
                 </nav>
@@ -64,6 +64,9 @@
     </header>
 
     <main>
+        <marquee class="marquee" width="100%" direction="left" height="100px">
+            Empowering young minds with knowledge, creativity, and values to shape a brighter tomorrow.
+        </marquee>
         <section class="section_1">
            <div> 
                 <div class="sec_1_title">
@@ -100,70 +103,124 @@
                 </div>
                 
                 <div class="arrow_button">
-                    <button class="circle-button arrow_btn_1"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg></button>
-                    <button class="circle-button arrow_btn_2"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg></button>
+                    <button class="circle_button arrow_btn_1"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg></button>
+                    <button class="circle_button arrow_btn_2"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg></button>
                 </div>
            </div>
         </section>
-    </main>
-        <!-- <section class="section_2">
-            <div class="sec_2_title">
-                <h1>Our Stories</h1>
-            </div>
-            
-            <div class="sec_2_cards">
+ 
+        <section class="story_bg">
+
+            <h1 class="storie_title">Our Stories</h1>
+           
+            <div class="stories">
+
+                <div class="left_item stories_style">
+                    <img src="assets/story-1.png" alt="">
+                    <h4 class="story_sub_title">A fun toddler coloring training on
+                        classroom</h4>
+                    <p class="story_description">Beautiful branding for changes by Never Now in Australia.
+                        changes is a platform for open discussion in an inclusive and
+                        collaborative environment, providing the...</p>
+                    <button class="story_btn1">November 19, 2019</button>
+                </div>
+
+                <div class="right_item">
+                    <div class="stories_item">
+                        <img src="assets/story-2.png" alt="">
                 
+                        <p class="story_sub_description">Find out if a school fits the
+                            family’s needs
+                        </p>
+
+                        <button class="story_btnss">November 19,2019</button>
+                    </div>
+                    
+                    <div class="stories_item">
+                        <img src="assets/story-3.png" alt="">
+                        <p class="story_sub_description">Summer math & literacy
+                            centres for kids</p>
+                        <button class="story_btnsu">November 19, 2019</button>
+                    </div>
+
+                    
+                    <div class="stories_item hiden">
+                        <img src="assets/story-3.png" alt="">
+                        <p class="story_sub_description">Summer math & literacy
+                            centres for kids</p>
+                        <button class="story_btnsu">November 19, 2019</button>
+                    </div>
+
+                    <div class="stories_item">
+                        <img src="assets/story-4.png" alt="">
+                        <p class="story_sub_description">Classroom management
+                            techniques for new tutors</p>
+                        <button class="story_btnss">September 10, 2019</button>
+                    </div>
+
+                    
+                    <div class="stories_item">
+                        <img src="assets/story-5.png" alt="">
+                        <p class="story_sub_description">Conversation rhymes
+                            improve kids listening</p>
+                        <button class="story_btnss">July 19, 2019</button>
+                    </div>
+
+                    <div class="stories_item hiden">
+                        <img src="assets/story-3.png" alt="">
+                        <p class="story_sub_description">Summer math & literacy
+                            centres for kids</p>
+                        <button class="story_btnsu">November 19, 2019</button>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="sec_2_btn">
-                    <button class="btn_style">
-                        View All
-                    </button>
-            </div>
+            <div class="view_all"> <button class="btn_style">View All</button></div>
         
         </section>
     
     </main>
 
-    <footer>
-        <div class="left">
-            <div class="left_title">
-                <img src="assets/logo_white.png" alt="bagpack">
-                <h1>Kids Education</h1>
+    <footer class="footer">
+        <div class="foot">
+            <div class="footer_section">
+                <div class="footer_section_title">
+                    <img src="assets/logo_white.png" alt="bagpack">
+                    <h1>Kids <br>Education</h1>
+                </div>
+                <p>
+                    Thank you for visiting 
+                    <span style="font-size: 1.5rem; font-weight: bold;color: black">
+                        Kid School !
+                    </span>
+                    We hope you’ve found exciting tools, resources, 
+                    and ideas to support your child’s educational journey. 
+                    Together, let’s build a strong foundation for your child’s future 
+                    success. Happy learning !
+                </p>
             </div>
-            <p>
-                Thank you for visiting 
-                <span style="font-size: 1.5rem; font-weight: bold;color: rgba(255, 255, 204, 1)">
-                    Kid School !
-                </span>
-                We hope you’ve found exciting tools, resources, 
-                and ideas to support your child’s educational journey. 
-                Whether you’re exploring early learning activities, fun 
-                STEM projects, or strategies 
-                to help your middle schooler succeed, we’re here to guide 
-                you every step of the way. Keep coming back for updated content, 
-                inspiring tips, and a community that values the power of learning. 
-                Together, let’s build a strong foundation for your child’s future 
-                success. Happy learning!
-            </p>
-        </div>
-        <div class="mid">
-            <div class="link_container">
-                <h4>About School</h4>
-                <a class="hbtn" href="#">Home</a>
-                <a class="abtn" href="#">About</a>
-                <a class="fbtn" href="#">Facilities</a>
-                <a class="admibtn" href="#">Admission</a>
-                <a class="ctabtn" href="#">Contact</a> 
+            <div class="footer_link_container">
+                    <h4>About School</h4>
+                <div class="footer_links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Facilities</a>
+                    <a href="#">Admission</a>
+                    <a href="#">Contact</a> 
+                </div>
             </div>
-        </div>
-        <div class="right">
-            <h4>Keep In Touch</h4>
-            <a href="#"><img src="assets/fb.png" alt="facebook icon"></a>
-            <a href="#"><img src="assets/dribble.png" alt="dribble icon"></a>
-            <a href="#"><img src="assets/twitter.png" alt="twitter icon"></a>
-            <a href="#"><img src="assets/google+.png" alt="google icon"></a>
-        </div>
-    </footer> -->
+            <div class="social_section">
+                <h4>Keep In Touch</h4>
+                <div class="social_img">
+                    <a href="#"><img src="assets/fb.png" alt="facebook icon"></a>
+                    <a href="#"><img src="assets/dribble.png" alt="dribble icon"></a>
+                    <a href="#"><img src="assets/twitter.png" alt="twitter icon"></a>
+                    <a href="#"><img src="assets/google+.png" alt="google icon"></a>
+                </div>
+            </div>
+        </div>        
+    </footer>
 </body>
 </html>
